@@ -1,0 +1,42 @@
+<form ng-submit="vm.submit(vm.address)" layout="column" layout-align="center start">
+    <h1 class="md-title">
+        Address form
+    </h1>
+    <div layout="row" class="form-element">
+        <md-input-container flex="75">
+            <label>Street</label>
+            <input type="text" required ng-model="vm.address.street">
+        </md-input-container>
+        <md-input-container flex="25">
+            <label>House Number</label>
+            <input type="text" required ng-model="vm.address.housenumber">
+        </md-input-container>
+    </div>
+    <div layout="row" class="form-element">
+        <md-input-container flex="75">
+            <label>City</label>
+            <input type="text" required ng-model="vm.address.city">
+        </md-input-container>
+        <md-input-container flex="25">
+            <label>Postal Code</label>
+            <input type="text" required ng-model="vm.address.postalcode">
+        </md-input-container>
+    </div>
+    <h3 class="form-element md-subhead">
+        Subscribe to out newsletter?
+    </h3>
+    <md-radio-group layout="row" class="form-element" ng-model="vm.address.newsletter">
+        <md-radio-button flex="50" value="1" aria-label="I want to subscribe to newsletter">
+            Awesome!
+        </md-radio-button>
+        <md-radio-button flex="50" value="0" aria-label="Don't want to subscribe to newsletter'">
+            No, thanks
+        </md-radio-button>
+    </md-radio-group>
+    <md-checkbox class="form-element terms-confirmation" ng-model="vm.address.terms" aria-label="Terms and services confirmation">
+        I read and agree with terms of service
+    </md-checkbox>
+    <div layout="row" layout-align="center center" class="form-element">
+        <button type="submit" class="md-button md-raised md-cornered">Submit</button>
+    </div>
+</form>

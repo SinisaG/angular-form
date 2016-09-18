@@ -3,9 +3,8 @@
 
     angular.module('app', [
         // vendor packages
-        // 'ngResource',
-        // 'ui.router',
-        
-        'mcmakler'
+        'ngResource',
+        'ui.router',
+        'ngMaterial'
     ])
 })();

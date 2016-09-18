@@ -1,2 +1,51 @@
 @import "style/mixins";
 @import "style/variables";
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 48px;
+    .logo {
+        max-width: 320px;
+        height: auto;
+        width: 100%;
+    }
+}
+
+form {
+    width: 100%;
+    margin: auto;
+    .form-element {
+        width: 100%;
+    }
+    .terms-confirmation {
+        margin: 24px 0;
+        font-size: 10px;
+        line-height: 20px;
+    }
+}
+
+.toast{
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 4px;
+    &.error {
+        background: #D8000C;
+    }
+    &.success{ 
+        background: #4F8A10;
+    }
+}
+
+//overweire angular material
+
+md-toast .md-toast-content{
+    background-color: transparent;
+    box-shadow: none;
+}

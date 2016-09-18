@@ -11,23 +11,23 @@ require('./tasks/angular.task.js');
 elixir(function (mix) {
 
     mix
-        // bootstrap
-        .copy('bower_components/bootstrap/dist/css/*.min.css', 'resources/css/bootstrap.min.css')
-        .copy('bower_components/bootstrap/dist/fonts', 'public/fonts')
+        // angular material
+        .copy('bower_components/angular-material/angular-material.min.css', 'resources/css/angular-material.min.css')
 
         // sass
         .sass('style.scss')
 
         // angular
         .angular([
-            'bower_components/jquery/dist/jquery.min.js',
-            'bower_components/bootstrap/dist/js/*.min.js',
             'bower_components/angular/angular.min.js',
             'bower_components/angular-ui-router/release/*min.js',
             'bower_components/angular-animate/*min.js',
             'bower_components/angular-aria/*min.js',
             'bower_components/angular-resource/*min.js',
-            'bower_components/lodash/*min.js'
+            'bower_components/angular-material/angular-material.min.js',
+            'bower_components/angular-messages/angular-messages.js',
+            'bower_components/angular-ui-router/release/angular-ui-router.min.js',
+            'bower_components/angular-resource/angular-resource.min.js'
         ], 'public/js', 'vendor.js')
         .angular('resources/angular/app/', 'public/js', 'angular.js')
 

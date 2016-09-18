@@ -1,59 +1,28 @@
 <!doctype html>
 
-<html ng-app="app" ng-controller="AppCtrl">
+<html ng-app="app">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>McMakler frontend test</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Angular form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/vendor.css">
+        <link rel="stylesheet" href="css/vendor.css">
+        <link rel="stylesheet" href="css/style.css">
 
-    <script src="js/vendor.js"></script>
+        <script src="js/vendor.js"></script>
+    </head>
 
-</head>
-
-<body>
-
-<div class="container" ng-controller="TestCtrl">
-    <form>
-        <div class="form-group">
-            <label for="inputText1">Street</label>
-            <input type="text" class="form-control" id="inputText1" placeholder="Street" ng-model="street">
+    <body>
+        <header>
+            <img src="https://www.mcmakler.de/img/mobile/logo_06.png" alt="logo" class="logo"/>
+        </header>
+        <div data-ui-view> 
+            Loading...
         </div>
-        <div class="form-group">
-            <label for="inputText2">House Number</label>
-            <input type="text" class="form-control" id="inputText2" placeholder="House Number" ng-model="housenumber">
-        </div>
-        <div class="form-group">
-            <label for="inputText3">Postal Code</label>
-            <input type="text" class="form-control" id="inputText3" placeholder="Postal Code" ng-model="postalcode">
-        </div>
-        <div class="form-group">
-            <label for="inputText4">City</label>
-            <input type="text" class="form-control" id="inputText4" placeholder="City" ng-model="city">
-        </div>
-        <div class="form-group">
-            <label for="radio1">Radio1</label>
-            <input type="radio" id="radio1" name="radio" ng-model="radio" value="1">
-
-            <label for="radio2">Radio2</label>
-            <input type="radio" id="radio2" name="radio" ng-model="radio" value="2">
-        </div>
-        <div class="form-group">
-            <label for="check1">Check1</label>
-            <input type="checkbox" id="check1" ng-model="check">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-    </form>
-</div>
-
-<script src="js/angular.js"></script>
-<script src="js/scripts.js"></script>
-
-</body>
-
+        <script src="js/angular.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
