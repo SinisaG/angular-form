@@ -9,8 +9,10 @@
         vm.address = {};
         vm.showMap = false;
         vm.location = undefined;
-        
-        vm.submit = function (address) {
+        vm.submit = submit;
+
+        function submit(address) {
+            //we can also do further validation here
             geoService.geoCode(address).then(function (location) {
                 var message = "The coordinates for this address are: :lat, :lng"
                     .replace(':lat', location.lat)
@@ -25,7 +27,7 @@
                 vm.location = location;
                 vm.showMap = true;
             }).catch(function (err) {
-                
+
                 showToast(
                     {
                         error: err.message
@@ -39,7 +41,7 @@
             $mdToast.show({
                 hideDelay: 3000,
                 position: 'top left',
-                controller: function addressToastErrCtrl() { },
+                controller: function addressToastCtrl() { },
                 locals: scope,
                 bindToController: true,
                 controllerAs: 'vm',

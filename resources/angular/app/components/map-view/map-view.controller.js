@@ -6,7 +6,7 @@
     function addressFormCtrl(APP_CONFIG, $sce) {
         var vm = this;
         vm.formatMapQuery = formatMapQuery;
-        
+
         function formatMapQuery(streetLocation) {
             var url = APP_CONFIG.api.maps.view;
             url = url

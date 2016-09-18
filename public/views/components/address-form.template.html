@@ -1,7 +1,4 @@
-<map-view ng-if="vm.showMap"
-          data-street-location="vm.location" 
-          class="map-view"
-          ng-style="vm.showMap && {'height': '400px'}">
+<map-view ng-if="vm.showMap" data-street-location="vm.location" class="map-view" ng-style="vm.showMap && {'height': '400px'}">
     Loading...
 </map-view>
 
@@ -9,28 +6,28 @@
     <h1 class="md-title">
         Address form
     </h1>
-    <div layout="row" class="form-element">
-        <md-input-container flex="75">
+    <div layout="row" layout-xs="column" class="form-element">
+        <md-input-container flex="75" flex-xs="100">
             <label>Street</label>
             <input type="text" required ng-model="vm.address.street">
         </md-input-container>
-        <md-input-container flex="25">
+        <md-input-container flex="25" flex-xs="100">
             <label>House Number</label>
-            <input type="text" required ng-model="vm.address.housenumber">
+            <input type="text" required ng-model="vm.address.houseNumber">
         </md-input-container>
     </div>
-    <div layout="row" class="form-element">
-        <md-input-container flex="75">
+    <div layout="row" layout-xs="column" class="form-element">
+        <md-input-container flex="75" flex-xs="100">
             <label>City</label>
             <input type="text" required ng-model="vm.address.city">
         </md-input-container>
-        <md-input-container flex="25">
+        <md-input-container flex="25" flex-xs="100">
             <label>Postal Code</label>
-            <input type="text" required ng-model="vm.address.postalcode">
+            <input type="text" required ng-model="vm.address.postCode">
         </md-input-container>
     </div>
     <h3 class="form-element md-subhead">
-        Subscribe to out newsletter?
+        Subscribe to our newsletter?
     </h3>
     <md-radio-group layout="row" class="form-element" ng-model="vm.address.newsletter">
         <md-radio-button flex="50" value="1" aria-label="I want to subscribe to newsletter">

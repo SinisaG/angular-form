@@ -57,11 +57,11 @@ form {
 .map-view {
     height: 0;
     overflow: hidden;
-    -webkit-transition: height .3s;
-    transition: height .3s;
+    -webkit-transition: height .5s;
+    transition: height .5s;
     margin-bottom: 12px;
     display: block;
-    max-height: 50vh;
+    max-height: 400px;
 }
 //overweire angular material
 

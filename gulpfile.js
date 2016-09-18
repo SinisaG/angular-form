@@ -24,10 +24,8 @@ elixir(function (mix) {
             'bower_components/angular-animate/*min.js',
             'bower_components/angular-aria/*min.js',
             'bower_components/angular-resource/*min.js',
-            'bower_components/angular-material/angular-material.min.js',
-            'bower_components/angular-messages/angular-messages.js',
-            'bower_components/angular-ui-router/release/angular-ui-router.min.js',
-            'bower_components/angular-resource/angular-resource.min.js'
+            'bower_components/angular-material/*min.js',
+            'bower_components/angular-messages/*min.js'
         ], 'public/js', 'vendor.js')
         .angular('resources/angular/app/', 'public/js', 'angular.js')
 

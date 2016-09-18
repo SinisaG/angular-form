@@ -1,6 +1,10 @@
 # FRONT-END TEST (PRACTICAL)
 *Estimated time required: 3 hours.*
 
+## Demo
+
+You can find live demo of the task [here](https://sinisag.github.io/angular-form/).
+
 ## BEFORE YOU START
 - make sure you have npm on your dev machine
 - run `npm i` to install npm dependencies
