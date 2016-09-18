@@ -44,10 +44,10 @@ form {
 .map-view {
   height: 0;
   overflow: hidden;
-  transition: height .3s;
+  transition: height .5s;
   margin-bottom: 12px;
   display: block;
-  max-height: 50vh; }
+  max-height: 400px; }
 
 md-toast .md-toast-content {
   background-color: transparent;
