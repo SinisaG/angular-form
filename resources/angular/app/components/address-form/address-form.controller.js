@@ -7,6 +7,9 @@
         var vm = this;
         //model
         vm.address = {};
+        vm.showMap = false;
+        vm.location = undefined;
+        
         vm.submit = function (address) {
             geoService.geoCode(address).then(function (location) {
                 var message = "The coordinates for this address are: :lat, :lng"
@@ -17,15 +20,17 @@
                     {
                         message: message
                     },
-                    '/views/toasts/toast-success.template.html'
+                    'views/toasts/toast-success.template.html'
                 )
+                vm.location = location;
+                vm.showMap = true;
             }).catch(function (err) {
-
+                
                 showToast(
                     {
                         error: err.message
                     },
-                    '/views/toasts/toast-error.template.html'
+                    'views/toasts/toast-error.template.html'
                 )
             })
         }
@@ -33,7 +38,7 @@
         function showToast(scope, template) {
             $mdToast.show({
                 hideDelay: 3000,
-                position: 'bottom left',
+                position: 'top left',
                 controller: function addressToastErrCtrl() { },
                 locals: scope,
                 bindToController: true,

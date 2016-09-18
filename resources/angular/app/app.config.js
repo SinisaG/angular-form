@@ -14,7 +14,7 @@
         $stateProvider.state({
             name: 'home',
             url: '',
-            templateUrl: '/views/home.template.html',
+            templateUrl: 'views/home.template.html',
             controller: 'AppCtrl as vm'
         });
     }

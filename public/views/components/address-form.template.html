@@ -1,3 +1,10 @@
+<map-view ng-if="vm.showMap"
+          data-street-location="vm.location" 
+          class="map-view"
+          ng-style="vm.showMap && {'height': '400px'}">
+    Loading...
+</map-view>
+
 <form ng-submit="vm.submit(vm.address)" layout="column" layout-align="center start">
     <h1 class="md-title">
         Address form

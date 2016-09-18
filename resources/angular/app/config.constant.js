@@ -9,7 +9,8 @@
                     errors: {
                         ZERO_RESULTS: "Not a valid address.",
                         GENERIC: "We could not locate this address"
-                    }
+                    },
+                    view: 'https://www.google.com/maps/embed/v1/search?key=:key&q=:q'
                 }
             }
         });

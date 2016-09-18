@@ -5,11 +5,14 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 12px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header {
     text-align: center;
     margin-bottom: 48px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid $brandColor;
     .logo {
         max-width: 320px;
         height: auto;
@@ -17,9 +20,17 @@ header {
     }
 }
 
+h1, h3 {
+    color: $brandColor;
+    font-weight: bold;
+}
+
 form {
     width: 100%;
     margin: auto;
+    @media(min-width: $smallViewPort) {
+        width: 90%;
+    }
     .form-element {
         width: 100%;
     }
@@ -43,6 +54,15 @@ form {
     }
 }
 
+.map-view {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height .3s;
+    transition: height .3s;
+    margin-bottom: 12px;
+    display: block;
+    max-height: 50vh;
+}
 //overweire angular material
 
 md-toast .md-toast-content{

@@ -2,10 +2,9 @@
     angular
         .module('app')
         .component('addressForm', {
-            templateUrl: '/views/components/address-form.template.html',
+            templateUrl: 'views/components/address-form.template.html',
             controller: 'addressFormCtrl',
-            controllerAs: 'vm',
-            bindToController: true
+            controllerAs: 'vm'
         });
 
 }) ();
